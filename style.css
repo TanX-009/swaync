@@ -1,0 +1,255 @@
+@import url("../../.colors/gtk/colors.css");
+
+* {
+  font-family: FantasqueSansM Nerd Font Mono;
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+  opacity: 1;
+  background: @surfaceContainerHighest;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.notification {
+  background: @surface;
+  border: 3px solid @surfaceContainer;
+  border-radius: 5px;
+  margin: 0px -4px 0px 0px;
+  box-shadow: none;
+  padding: 0px;
+}
+
+.notification-content {
+  background: @surface;
+}
+
+.notification-default-action {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.close-button {
+  background: transparent;
+  color: @error;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-right: -7px;
+}
+
+.close-button:hover {
+  box-shadow: none;
+  background: transparent;
+  transition: all 0.15s ease-in-out;
+  border: none;
+}
+
+.notification-action {
+  border: none;
+  border-top: none;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  color: @primary;
+  background: @surfaceContainerLowest;
+}
+
+.notification-default-action {
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.inline-reply {
+  margin-top: 8px;
+}
+
+.inline-reply-entry {
+  background: @surfaceContainerHighest;
+  color: @onSurface;
+  caret-color: @onSurface;
+  border: 1px solid @surfaceContainerHighest;
+  border-radius: 5px;
+}
+
+.inline-reply-button {
+  margin-left: 4px;
+  background: @surfaceContainerHigh;
+  border: 1px solid @surfaceContainerHighest;
+  border-radius: 5px;
+  color: @onSurface;
+}
+
+.inline-reply-button:disabled {
+  background: initial;
+  color: @onSurfaceVariant;
+  border: 1px solid transparent;
+}
+
+.inline-reply-button:hover {
+  background: @surfaceContainer;
+}
+
+.image {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.summary {
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: @secondary;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: @onSurface;
+  text-shadow: none;
+  margin-right: 16px;
+}
+
+.body {
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  color: @onSurface;
+  text-shadow: none;
+}
+
+.control-center {
+  background: @surface;
+  border: 3px solid @surfaceContainer;
+  border-radius: 5px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.5;
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+/* .blank-window { */
+/*   background: transparent; */
+/* } */
+
+.widget-title {
+  color: @primary;
+  background: @surfaceContainerHigh;
+  padding: 5px 10px;
+  margin: 10px 10px 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.widget-title > button {
+  font-size: 1rem;
+  color: @onSurface;
+  text-shadow: none;
+  background: @surfaceContainerHigh;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.widget-title > button:hover {
+  background: @error;
+  color: @surface;
+}
+
+.widget-dnd {
+  background: @surfaceContainerHigh;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  font-size: large;
+  color: @primary;
+}
+
+.widget-dnd > switch {
+  border-radius: 5px;
+  background: @surfaceContainerHighest;
+}
+
+.widget-dnd > switch:checked {
+  background: @primary;
+  border: 1px solid @primary;
+}
+
+.widget-dnd > switch slider {
+  background: @surface;
+  border-radius: 5px;
+}
+
+.widget-dnd > switch:checked slider {
+  background: @surface;
+  border-radius: 5px;
+}
+
+.widget-label {
+  margin: 10px 10px 5px 10px;
+}
+
+.widget-label > label {
+  font-size: 1rem;
+  color: @onSurface;
+}
+
+.widget-mpris {
+  color: @onSurface;
+  background: @surfaceContainerHigh;
+  padding: 5px 10px;
+  margin: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.widget-mpris > box > button {
+  border-radius: 5px;
+}
+
+.widget-mpris-player {
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.widget-mpris-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}
+
+.widget-menubar > box > .menu-button-bar > button {
+  border: none;
+  background: transparent;
+}
+
+.topbar-buttons > button {
+  border: none;
+  background: transparent;
+}
