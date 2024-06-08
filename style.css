@@ -1,4 +1,4 @@
-@import url("../../.colors/gtk/colors.css");
+@import url("../../.colors/generated/gtk/colors.css");
 
 * {
   font-family: FantasqueSansM Nerd Font Mono;
@@ -29,12 +29,6 @@
   background: @surface;
 }
 
-.notification-default-action {
-  margin: 0;
-  padding: 0;
-  border-radius: 5px;
-}
-
 .close-button {
   background: transparent;
   color: @error;
@@ -53,21 +47,25 @@
 }
 
 .notification-action {
+  margin: 0 2px;
   border: none;
   border-top: none;
   padding: 0;
   border-radius: 5px;
+  color: @primary;
+  background: @surfaceContainer;
 }
 
 .notification-default-action:hover,
 .notification-action:hover {
   color: @primary;
-  background: @surfaceContainerLowest;
+  background: @primaryContainer;
 }
 
 .notification-default-action {
+  margin: 0;
+  padding: 0;
   border-radius: 5px;
-  margin: 0px;
 }
 
 .notification-default-action:not(:only-child) {
